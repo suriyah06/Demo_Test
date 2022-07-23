@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-04T09:53:51 IST" name="Suite" finished-at="2022-07-04T09:54:00 IST" duration-ms="8678">
+    <groups>
+      <group name="MobileLogin">
+        <method signature="TestNG_DemoClass.MobilePersonalLoan()[pri:0, instance:Demo_Package.TestNG_DemoClass@2ef3eef9]" name="MobilePersonalLoan" class="Demo_Package.TestNG_DemoClass"/>
+        <method signature="TestNG_DemoClass2.MobileCarLoan()[pri:1, instance:Demo_Package.TestNG_DemoClass2@72057ecf]" name="MobileCarLoan" class="Demo_Package.TestNG_DemoClass2"/>
+        <method signature="TestNG_DemoClass3.MobileHomeLoan()[pri:0, instance:Demo_Package.TestNG_DemoClass3@1ab3a8c8]" name="MobileHomeLoan" class="Demo_Package.TestNG_DemoClass3"/>
+      </group> <!-- MobileLogin -->
+      <group name="WebLogin">
+        <method signature="TestNG_DemoClass2.WebCarLoan()[pri:0, instance:Demo_Package.TestNG_DemoClass2@72057ecf]" name="WebCarLoan" class="Demo_Package.TestNG_DemoClass2"/>
+        <method signature="TestNG_DemoClass3.WebHomeLoan()[pri:0, instance:Demo_Package.TestNG_DemoClass3@1ab3a8c8]" name="WebHomeLoan" class="Demo_Package.TestNG_DemoClass3"/>
+        <method signature="TestNG_DemoClass.WebPersonalLoan()[pri:0, instance:Demo_Package.TestNG_DemoClass@2ef3eef9]" name="WebPersonalLoan" class="Demo_Package.TestNG_DemoClass"/>
+      </group> <!-- WebLogin -->
+      <group name="APILogin">
+        <method signature="TestNG_DemoClass.APIPersonalLoan()[pri:0, instance:Demo_Package.TestNG_DemoClass@2ef3eef9]" name="APIPersonalLoan" class="Demo_Package.TestNG_DemoClass"/>
+        <method signature="TestNG_DemoClass2.APICarLoan()[pri:2, instance:Demo_Package.TestNG_DemoClass2@72057ecf]" name="APICarLoan" class="Demo_Package.TestNG_DemoClass2"/>
+        <method signature="TestNG_DemoClass3.APIHomeLoan()[pri:0, instance:Demo_Package.TestNG_DemoClass3@1ab3a8c8]" name="APIHomeLoan" class="Demo_Package.TestNG_DemoClass3"/>
+      </group> <!-- APILogin -->
+    </groups>
+    <test started-at="2022-07-04T09:53:51 IST" name="TestNG" finished-at="2022-07-04T09:53:51 IST" duration-ms="50">
+      <class name="Demo_Package.TestNG_DemoClass">
+        <test-method signature="MobilePersonalLoan()[pri:0, instance:Demo_Package.TestNG_DemoClass@2ef3eef9]" started-at="2022-07-04T09:53:51 IST" name="MobilePersonalLoan" finished-at="2022-07-04T09:53:51 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobilePersonalLoan -->
+        <test-method signature="APIPersonalLoan()[pri:0, instance:Demo_Package.TestNG_DemoClass@2ef3eef9]" started-at="2022-07-04T09:53:51 IST" name="APIPersonalLoan" finished-at="2022-07-04T09:53:51 IST" depends-on-methods="Demo_Package.TestNG_DemoClass.MobilePersonalLoan" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APIPersonalLoan -->
+        <test-method signature="WebPersonalLoan()[pri:0, instance:Demo_Package.TestNG_DemoClass@2ef3eef9]" started-at="2022-07-04T09:53:51 IST" name="WebPersonalLoan" finished-at="2022-07-04T09:53:51 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebPersonalLoan -->
+      </class> <!-- Demo_Package.TestNG_DemoClass -->
+      <class name="Demo_Package.TestNG_DemoClass2">
+        <test-method signature="WebCarLoan()[pri:0, instance:Demo_Package.TestNG_DemoClass2@72057ecf]" started-at="2022-07-04T09:53:51 IST" name="WebCarLoan" finished-at="2022-07-04T09:53:51 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebCarLoan -->
+        <test-method signature="MobileCarLoan()[pri:1, instance:Demo_Package.TestNG_DemoClass2@72057ecf]" started-at="2022-07-04T09:53:51 IST" name="MobileCarLoan" finished-at="2022-07-04T09:53:51 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileCarLoan -->
+        <test-method signature="APICarLoan()[pri:2, instance:Demo_Package.TestNG_DemoClass2@72057ecf]" started-at="2022-07-04T09:53:51 IST" name="APICarLoan" finished-at="2022-07-04T09:53:51 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APICarLoan -->
+      </class> <!-- Demo_Package.TestNG_DemoClass2 -->
+      <class name="Demo_Package.TestNG_DemoClass3">
+        <test-method signature="APIHomeLoan()[pri:0, instance:Demo_Package.TestNG_DemoClass3@1ab3a8c8]" started-at="2022-07-04T09:53:51 IST" name="APIHomeLoan" finished-at="2022-07-04T09:53:51 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APIHomeLoan -->
+        <test-method signature="MobileHomeLoan()[pri:0, instance:Demo_Package.TestNG_DemoClass3@1ab3a8c8]" started-at="2022-07-04T09:53:51 IST" name="MobileHomeLoan" finished-at="2022-07-04T09:53:51 IST" duration-ms="8" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at Demo_Package.TestNG_DemoClass3.MobileHomeLoan(TestNG_DemoClass3.java:14)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:45)
+at org.testng.internal.InvokeMethodRunnable.call(InvokeMethodRunnable.java:73)
+at org.testng.internal.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileHomeLoan -->
+        <test-method signature="WebHomeLoan()[pri:0, instance:Demo_Package.TestNG_DemoClass3@1ab3a8c8]" started-at="2022-07-04T09:53:51 IST" name="WebHomeLoan" finished-at="2022-07-04T09:53:51 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebHomeLoan -->
+      </class> <!-- Demo_Package.TestNG_DemoClass3 -->
+    </test> <!-- TestNG -->
+    <test started-at="2022-07-04T09:53:51 IST" name="Selenium" finished-at="2022-07-04T09:54:00 IST" duration-ms="8591">
+      <class name="Demo_Package.Demo_Class">
+        <test-method signature="test1(java.lang.String)[pri:0, instance:Demo_Package.Demo_Class@49139829]" started-at="2022-07-04T09:53:51 IST" name="test1" description="This test is happy path of the GreenKart application" finished-at="2022-07-04T09:54:00 IST" duration-ms="8589" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://rahulshettyacademy.com/seleniumPractise/#/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+      </class> <!-- Demo_Package.Demo_Class -->
+    </test> <!-- Selenium -->
+  </suite> <!-- Suite -->
+</testng-results>
